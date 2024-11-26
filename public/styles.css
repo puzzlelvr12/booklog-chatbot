@@ -1,23 +1,58 @@
+/* Styling for the red banner at the top */
+@font-face {
+    font-family: 'Adobe Caslon Pro';
+    src: url('fonts/AdobeCaslonPro-Regular.woff2') format('woff2'),
+         url('fonts/AdobeCaslonPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.banner {
+    background-color:rgba(250, 249, 245, 0.5); /* Background color with 50% opacity */
+    padding: 0px;  /* Add padding for better spacing */
+    font-size: 20px;  /* Make the font size larger */
+    font-weight: bold;  /* Optional: make the font bold */
+    position: fixed;  /* Fix the banner at the top */
+    top: 0;  /* Align to the top of the page */
+    left: 0;  /* Align to the left of the page */
+    width: 100%;  /* Make the banner take full width */
+}
+.banner .logo {
+    height: 70px;  /* Set logo height (adjust as needed) */
+    position:absolute;
+    padding: 50px;
+}
+
+.banner h1{
+    text-align: left;
+    padding: 30px 100px;
+    color:  rgb(13, 13, 13);
+    position: absolute;
+    
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Adobe Caslon Pro', serif;  /* Use the font */
+    background-color: rgb(243, 211, 83); /* Background color with 50% opacity */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;  /* Stack elements vertically */
+    padding-top: 60px; /* Add space to the top to prevent overlap with the banner */
 }
 
 .chat-container {
     width: 90%;
     max-width: 600px;
     padding: 20px;
-    background-color: white;
-    border-radius: 10px;
+    background-color: rgb(251, 249, 249);
+    border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Rest of your styles remain unchanged */
 .chat-box {
     height: 400px;
     overflow-y: auto;
@@ -39,14 +74,14 @@ button {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
-    background-color: #4CAF50;
+    background-color:#0b0b0b;
     color: white;
     cursor: pointer;
     font-size: 16px;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color:  rgb(243, 211, 83);
 }
 
 .bot, .user {
@@ -56,11 +91,10 @@ button:hover {
 }
 
 .bot {
-    background-color: #e0e0e0;
+    background-color: #f2f28e;
 }
 
 .user {
-    background-color: #d1f7d1;
+    background-color: #e2e2e2;
     text-align: right;
 }
-
